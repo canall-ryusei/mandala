@@ -1,0 +1,205 @@
+header {
+  height: 500px;
+  width: 98.5%;
+  background-image: url("../img/mandra.jpg");
+  margin-bottom: 20px;
+  }
+
+  .header_text{
+    position: relative;
+    top: 210px;
+    left: 500px;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.05), 0.01em 0.04em 0.03em rgb(0, 0, 0);
+    -webkit-background-clip: text;
+  }
+
+  body{
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .kicker_css{
+  text-align:center;
+  color: red;
+  border : 1px solid #808080;
+  width: 98.5%;
+  }
+  
+  div[class^="square1-"] {
+  border : 1px solid #808080;
+  background-color: #ff2000;
+  }
+  
+  div[class^="square2-"] {
+  border : 1px solid #808080;
+  background-color: #ff7c00;
+  }
+  
+  div[class^="square3-"] {
+  border : 1px solid #808080;
+  background-color: #f52394;
+  }
+  
+  div[class^="square4-"] {
+  border : 1px solid #808080;
+  background-color: #800080;
+  }
+  
+  div[class^="square5-"] {
+  border : 1px solid #808080;
+  background-color: #0062c6;
+  }
+  
+  div[class^="square5-1"] {
+  background-color: #ff2000;
+  }
+  
+  div[class^="square5-2"] {
+  background-color: #ff7c00;
+  }
+  
+  div[class^="square5-3"] {
+  background-color: #f52394;
+  }
+  
+  div[class^="square5-4"] {
+  background-color: #800080;
+  }
+  
+  div[class^="square5-6"] {
+  background-color: #00b2d4;
+  }
+  
+  div[class^="square5-7"] {
+  background-color: #00ab00;
+  }
+  
+  div[class^="square5-8"] {
+  background-color: #90e200;
+  }
+  
+  div[class^="square5-9"] {
+  background-color: #ffcf00;
+  }
+  
+  div[class^="square6-"] {
+  border : 1px solid #808080;
+  background-color: #00b2d4;
+  }
+  
+  div[class^="square7-"] {
+  border : 1px solid #808080;
+  background-color: #00ab00;
+  }
+  
+  div[class^="square8-"] {
+  border : 1px solid #808080;
+  background-color: #90e200;
+  }
+  
+  div[class^="square9-"] {
+  border : 1px solid #808080;
+  background-color: #ffcf00;
+  }
+  
+  .grid-container {
+  display: grid;
+  grid-template-squares: 33% 33% 33%;
+  grid-template-rows: 30vh 30vh 30vh;
+  grid-template-areas: "square1 square2 square3" "square4 center-square5 square6" "square7 square8 square9";
+  }
+  
+  .square1 {
+  grid-area: square1;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square1-1 square1-2 square1-3" "square1-4 square1-5 square1-6" "square1-7 square1-8 square1-9";
+  margin: auto;
+  }
+  
+  .square2 {
+  grid-area: square2;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square2-1 square2-2 square2-3" "square2-4 square2-5 square2-6" "square2-7 square2-8 square2-9";
+  margin: auto;
+  }
+  
+  .square3 {
+  grid-area: square3;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square3-1 square3-2 square3-3" "square3-4 square3-5 square3-6" "square3-7 square3-8 square3-9";
+  margin: auto;
+  }
+  
+  .square4 {
+  grid-area: square4;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square4-1 square4-2 square4-3" "square4-4 square4-5 square4-6" "square4-7 square4-8 square4-9";
+  margin: auto;
+  }
+  
+  .center-square5 { 
+  grid-area: center-square5;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square5-1 square5-2 square5-3" "square5-4 square5-5 square5-6" "square5-7 square5-8 square5-9";
+  margin: auto;
+  }
+  
+  .square6 {
+  grid-area: square6;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square6-1 square6-2 square6-3" "square6-4 square6-5 square6-6" "square6-7 square6-8 square6-9";
+  margin: auto;
+  }
+  
+  .square7 {
+  grid-area: square7;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square7-1 square7-2 square7-3" "square7-4 square7-5 square7-6" "square7-7 square7-8 square7-9";
+  margin: auto;
+  }
+  
+  .square8 {
+  grid-area: square8;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square8-1 square8-2 square8-3" "square8-4 square8-5 square8-6" "square8-7 square8-8 square8-9";
+  margin: auto;
+  }
+  
+  .square9 {
+  grid-area: square9;
+  display: grid;
+  grid-auto-squares: 33%;
+  grid-auto-rows: 9.5vh;
+  grid-template-areas: "square9-1 square9-2 square9-3" "square9-4 square9-5 square9-6" "square9-7 square9-8 square9-9";
+  margin: auto;
+  }
+  
+  textarea{
+  width: 95%;
+  height: 95%;
+  text-align:center;
+  border:none;
+  background-color: transparent;
+  }

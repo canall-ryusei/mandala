@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>曼荼羅チャート</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/fukushi.css">
+</head>
+<body>
+    
+<header>
+<p class="header_text">曼荼羅チャート</p>
+</header>
+
+<!-- <button class="kicker_css">自動保存</button> -->
+<div class="kicker_css"><textarea id="kicker"></textarea></div>
+
+<a href="#" onclick="deletelocalstrage()">削除する場合はコチラをクリック</a>
+
+<div class="grid-container">
+        <div class="square1">
+                <div class="square1-1"><textarea id="square1-1-textarea"></textarea></div>
+                <div class="square1-2"><textarea id="square1-2-textarea"></textarea></div>
+                <div class="square1-3"><textarea id="square1-3-textarea"></textarea></div>
+                <div class="square1-4"><textarea id="square1-4-textarea"></textarea></div>
+                <div class="square1-5"><textarea id="square1-5-textarea"></textarea></div>
+                <div class="square1-6"><textarea id="square1-6-textarea"></textarea></div>
+                <div class="square1-7"><textarea id="square1-7-textarea"></textarea></div>
+                <div class="square1-8"><textarea id="square1-8-textarea"></textarea></div>
+                <div class="square1-9"><textarea id="square1-9-textarea"></textarea></div>
+        </div>
+        <div class="square2">
+                <div class="square2-1"><textarea id="square2-1-textarea"></textarea></div>
+                <div class="square2-2"><textarea id="square2-2-textarea"></textarea></div>
+                <div class="square2-3"><textarea id="square2-3-textarea"></textarea></div>
+                <div class="square2-4"><textarea id="square2-4-textarea"></textarea></div>
+                <div class="square2-5"><textarea id="square2-5-textarea"></textarea></div>
+                <div class="square2-6"><textarea id="square2-6-textarea"></textarea></div>
+                <div class="square2-7"><textarea id="square2-7-textarea"></textarea></div>
+                <div class="square2-8"><textarea id="square2-8-textarea"></textarea></div>
+                <div class="square2-9"><textarea id="square2-9-textarea"></textarea></div>
+        </div>
+        <div class="square3">
+                <div class="square3-1"><textarea id="square3-1-textarea"></textarea></div>
+                <div class="square3-2"><textarea id="square3-2-textarea"></textarea></div>
+                <div class="square3-3"><textarea id="square3-3-textarea"></textarea></div>
+                <div class="square3-4"><textarea id="square3-4-textarea"></textarea></div>
+                <div class="square3-5"><textarea id="square3-5-textarea"></textarea></div>
+                <div class="square3-6"><textarea id="square3-6-textarea"></textarea></div>
+                <div class="square3-7"><textarea id="square3-7-textarea"></textarea></div>
+                <div class="square3-8"><textarea id="square3-8-textarea"></textarea></div>
+                <div class="square3-9"><textarea id="square3-9-textarea"></textarea></div>
+        </div>
+        <div class="square4">
+                <div class="square4-1"><textarea id="square4-1-textarea"></textarea></div>
+                <div class="square4-2"><textarea id="square4-2-textarea"></textarea></div>
+                <div class="square4-3"><textarea id="square4-3-textarea"></textarea></div>
+                <div class="square4-4"><textarea id="square4-4-textarea"></textarea></div>
+                <div class="square4-5"><textarea id="square4-5-textarea"></textarea></div>
+                <div class="square4-6"><textarea id="square4-6-textarea"></textarea></div>
+                <div class="square4-7"><textarea id="square4-7-textarea"></textarea></div>
+                <div class="square4-8"><textarea id="square4-8-textarea"></textarea></div>
+                <div class="square4-9"><textarea id="square4-9-textarea"></textarea></div>
+        </div>
+        <div class="center-square5">
+                <div class="square5-1"><textarea id="square5-1-textarea"></textarea></div>
+                <div class="square5-2"><textarea id="square5-2-textarea"></textarea></div>
+                <div class="square5-3"><textarea id="square5-3-textarea"></textarea></div>
+                <div class="square5-4"><textarea id="square5-4-textarea"></textarea></div>
+                <div class="square5-5"><textarea id="square5-5-textarea"></textarea></div>
+                <div class="square5-6"><textarea id="square5-6-textarea"></textarea></div>
+                <div class="square5-7"><textarea id="square5-7-textarea"></textarea></div>
+                <div class="square5-8"><textarea id="square5-8-textarea"></textarea></div>
+                <div class="square5-9"><textarea id="square5-9-textarea"></textarea></div>
+        </div>
+        <div class="square6">
+                <div class="square6-1"><textarea id="square6-1-textarea"></textarea></div>
+                <div class="square6-2"><textarea id="square6-2-textarea"></textarea></div>
+                <div class="square6-3"><textarea id="square6-3-textarea"></textarea></div>
+                <div class="square6-4"><textarea id="square6-4-textarea"></textarea></div>
+                <div class="square6-5"><textarea id="square6-5-textarea"></textarea></div>
+                <div class="square6-6"><textarea id="square6-6-textarea"></textarea></div>
+                <div class="square6-7"><textarea id="square6-7-textarea"></textarea></div>
+                <div class="square6-8"><textarea id="square6-8-textarea"></textarea></div>
+                <div class="square6-9"><textarea id="square6-9-textarea"></textarea></div>
+        </div>
+        <div class="square7">
+                <div class="square7-1"><textarea id="square7-1-textarea"></textarea></div>
+                <div class="square7-2"><textarea id="square7-2-textarea"></textarea></div>
+                <div class="square7-3"><textarea id="square7-3-textarea"></textarea></div>
+                <div class="square7-4"><textarea id="square7-4-textarea"></textarea></div>
+                <div class="square7-5"><textarea id="square7-5-textarea"></textarea></div>
+                <div class="square7-6"><textarea id="square7-6-textarea"></textarea></div>
+                <div class="square7-7"><textarea id="square7-7-textarea"></textarea></div>
+                <div class="square7-8"><textarea id="square7-8-textarea"></textarea></div>
+                <div class="square7-9"><textarea id="square7-9-textarea"></textarea></div>
+        </div>
+        <div class="square8">
+                <div class="square8-1"><textarea id="square8-1-textarea"></textarea></div>
+                <div class="square8-2"><textarea id="square8-2-textarea"></textarea></div>
+                <div class="square8-3"><textarea id="square8-3-textarea"></textarea></div>
+                <div class="square8-4"><textarea id="square8-4-textarea"></textarea></div>
+                <div class="square8-5"><textarea id="square8-5-textarea"></textarea></div>
+                <div class="square8-6"><textarea id="square8-6-textarea"></textarea></div>
+                <div class="square8-7"><textarea id="square8-7-textarea"></textarea></div>
+                <div class="square8-8"><textarea id="square8-8-textarea"></textarea></div>
+                <div class="square8-9"><textarea id="square8-9-textarea"></textarea></div>
+        </div>
+        <div class="square9">
+                <div class="square9-1"><textarea id="square9-1-textarea"></textarea></div>
+                <div class="square9-2"><textarea id="square9-2-textarea"></textarea></div>
+                <div class="square9-3"><textarea id="square9-3-textarea"></textarea></div>
+                <div class="square9-4"><textarea id="square9-4-textarea"></textarea></div>
+                <div class="square9-5"><textarea id="square9-5-textarea"></textarea></div>
+                <div class="square9-6"><textarea id="square9-6-textarea"></textarea></div>
+                <div class="square9-7"><textarea id="square9-7-textarea"></textarea></div>
+                <div class="square9-8"><textarea id="square9-8-textarea"></textarea></div>
+                <div class="square9-9"><textarea id="square9-9-textarea"></textarea></div>
+        </div>
+</div>
+
+<a href="#" onclick="deletelocalstrage()">削除する場合はコチラをクリック</a>
+
+
+
+
+<script>
+
+/**
+     *起動時localstrageから値を取得
+     */
+        window.onload = function () {
+        var textvalue = localStorage.getItem('kicker');
+    //値がある場合
+        if (textvalue) {
+                document.getElementById('kicker').value = textvalue;
+        } else {
+                document.getElementById('kicker').value = "ここにテーマを入力すると自動保存がスタートします";
+        }
+    document.getElementById('square1-1-textarea').value = localStorage.getItem('square1-1-textarea');
+    document.getElementById('square1-2-textarea').value = localStorage.getItem('square1-2-textarea');
+    document.getElementById('square1-3-textarea').value = localStorage.getItem('square1-3-textarea');
+    document.getElementById('square1-4-textarea').value = localStorage.getItem('square1-4-textarea');
+    document.getElementById('square1-5-textarea').value = localStorage.getItem('square1-5-textarea');
+    document.getElementById('square1-6-textarea').value = localStorage.getItem('square1-6-textarea');
+    document.getElementById('square1-7-textarea').value = localStorage.getItem('square1-7-textarea');
+    document.getElementById('square1-8-textarea').value = localStorage.getItem('square1-8-textarea');
+    document.getElementById('square1-9-textarea').value = localStorage.getItem('square1-9-textarea');
+
+    document.getElementById('square2-1-textarea').value = localStorage.getItem('square2-1-textarea');
+    document.getElementById('square2-2-textarea').value = localStorage.getItem('square2-2-textarea');
+    document.getElementById('square2-3-textarea').value = localStorage.getItem('square2-3-textarea');
+    document.getElementById('square2-4-textarea').value = localStorage.getItem('square2-4-textarea');
+    document.getElementById('square2-5-textarea').value = localStorage.getItem('square2-5-textarea');
+    document.getElementById('square2-6-textarea').value = localStorage.getItem('square2-6-textarea');
+    document.getElementById('square2-7-textarea').value = localStorage.getItem('square2-7-textarea');
+    document.getElementById('square2-8-textarea').value = localStorage.getItem('square2-8-textarea');
+    document.getElementById('square2-9-textarea').value = localStorage.getItem('square2-9-textarea');
+
+    document.getElementById('square3-1-textarea').value = localStorage.getItem('square3-1-textarea');
+    document.getElementById('square3-2-textarea').value = localStorage.getItem('square3-2-textarea');
+    document.getElementById('square3-3-textarea').value = localStorage.getItem('square3-3-textarea');
+    document.getElementById('square3-4-textarea').value = localStorage.getItem('square3-4-textarea');
+    document.getElementById('square3-5-textarea').value = localStorage.getItem('square3-5-textarea');
+    document.getElementById('square3-6-textarea').value = localStorage.getItem('square3-6-textarea');
+    document.getElementById('square3-7-textarea').value = localStorage.getItem('square3-7-textarea');
+    document.getElementById('square3-8-textarea').value = localStorage.getItem('square3-8-textarea');
+    document.getElementById('square3-9-textarea').value = localStorage.getItem('square3-9-textarea');
+
+    document.getElementById('square4-1-textarea').value = localStorage.getItem('square4-1-textarea');
+    document.getElementById('square4-2-textarea').value = localStorage.getItem('square4-2-textarea');
+    document.getElementById('square4-3-textarea').value = localStorage.getItem('square4-3-textarea');
+    document.getElementById('square4-4-textarea').value = localStorage.getItem('square4-4-textarea');
+    document.getElementById('square4-5-textarea').value = localStorage.getItem('square4-5-textarea');
+    document.getElementById('square4-6-textarea').value = localStorage.getItem('square4-6-textarea');
+    document.getElementById('square4-7-textarea').value = localStorage.getItem('square4-7-textarea');
+    document.getElementById('square4-8-textarea').value = localStorage.getItem('square4-8-textarea');
+    document.getElementById('square4-9-textarea').value = localStorage.getItem('square4-9-textarea');
+
+    document.getElementById('square5-1-textarea').value = localStorage.getItem('square5-1-textarea');
+    document.getElementById('square5-2-textarea').value = localStorage.getItem('square5-2-textarea');
+    document.getElementById('square5-3-textarea').value = localStorage.getItem('square5-3-textarea');
+    document.getElementById('square5-4-textarea').value = localStorage.getItem('square5-4-textarea');
+    document.getElementById('square5-5-textarea').value = localStorage.getItem('square5-5-textarea');
+    document.getElementById('square5-6-textarea').value = localStorage.getItem('square5-6-textarea');
+    document.getElementById('square5-7-textarea').value = localStorage.getItem('square5-7-textarea');
+    document.getElementById('square5-8-textarea').value = localStorage.getItem('square5-8-textarea');
+    document.getElementById('square5-9-textarea').value = localStorage.getItem('square5-9-textarea');
+
+    document.getElementById('square6-1-textarea').value = localStorage.getItem('square6-1-textarea');
+    document.getElementById('square6-2-textarea').value = localStorage.getItem('square6-2-textarea');
+    document.getElementById('square6-3-textarea').value = localStorage.getItem('square6-3-textarea');
+    document.getElementById('square6-4-textarea').value = localStorage.getItem('square6-4-textarea');
+    document.getElementById('square6-5-textarea').value = localStorage.getItem('square6-5-textarea');
+    document.getElementById('square6-6-textarea').value = localStorage.getItem('square6-6-textarea');
+    document.getElementById('square6-7-textarea').value = localStorage.getItem('square6-7-textarea');
+    document.getElementById('square6-8-textarea').value = localStorage.getItem('square6-8-textarea');
+    document.getElementById('square6-9-textarea').value = localStorage.getItem('square6-9-textarea');
+
+    document.getElementById('square7-1-textarea').value = localStorage.getItem('square7-1-textarea');
+    document.getElementById('square7-2-textarea').value = localStorage.getItem('square7-2-textarea');
+    document.getElementById('square7-3-textarea').value = localStorage.getItem('square7-3-textarea');
+    document.getElementById('square7-4-textarea').value = localStorage.getItem('square7-4-textarea');
+    document.getElementById('square7-5-textarea').value = localStorage.getItem('square7-5-textarea');
+    document.getElementById('square7-6-textarea').value = localStorage.getItem('square7-6-textarea');
+    document.getElementById('square7-7-textarea').value = localStorage.getItem('square7-7-textarea');
+    document.getElementById('square7-8-textarea').value = localStorage.getItem('square7-8-textarea');
+    document.getElementById('square7-9-textarea').value = localStorage.getItem('square7-9-textarea');
+
+    document.getElementById('square8-1-textarea').value = localStorage.getItem('square8-1-textarea');
+    document.getElementById('square8-2-textarea').value = localStorage.getItem('square8-2-textarea');
+    document.getElementById('square8-3-textarea').value = localStorage.getItem('square8-3-textarea');
+    document.getElementById('square8-4-textarea').value = localStorage.getItem('square8-4-textarea');
+    document.getElementById('square8-5-textarea').value = localStorage.getItem('square8-5-textarea');
+    document.getElementById('square8-6-textarea').value = localStorage.getItem('square8-6-textarea');
+    document.getElementById('square8-7-textarea').value = localStorage.getItem('square8-7-textarea');
+    document.getElementById('square8-8-textarea').value = localStorage.getItem('square8-8-textarea');
+    document.getElementById('square8-9-textarea').value = localStorage.getItem('square8-9-textarea');
+
+    document.getElementById('square9-1-textarea').value = localStorage.getItem('square9-1-textarea');
+    document.getElementById('square9-2-textarea').value = localStorage.getItem('square9-2-textarea');
+    document.getElementById('square9-3-textarea').value = localStorage.getItem('square9-3-textarea');
+    document.getElementById('square9-4-textarea').value = localStorage.getItem('square9-4-textarea');
+    document.getElementById('square9-5-textarea').value = localStorage.getItem('square9-5-textarea');
+    document.getElementById('square9-6-textarea').value = localStorage.getItem('square9-6-textarea');
+    document.getElementById('square9-7-textarea').value = localStorage.getItem('square9-7-textarea');
+    document.getElementById('square9-8-textarea').value = localStorage.getItem('square9-8-textarea');
+    document.getElementById('square9-9-textarea').value = localStorage.getItem('square9-9-textarea');
+}
+/**
+* ブラウザフォーカスアウト時localstrage保存処理
+ここで自動保存が動くようにする
+*/
+window.onbeforeunload = function () {
+    //テキストエリアから値を取得
+    var textareavalue = document.getElementById('kicker').value;
+    localStorage.setItem('kicker', textareavalue);
+
+    textareavalue = document.getElementById('square1-1-textarea').value;
+    localStorage.setItem('square1-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-2-textarea').value;
+    localStorage.setItem('square1-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-3-textarea').value;
+    localStorage.setItem('square1-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-4-textarea').value;
+    localStorage.setItem('square1-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-5-textarea').value;
+    localStorage.setItem('square1-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-6-textarea').value;
+    localStorage.setItem('square1-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-7-textarea').value;
+    localStorage.setItem('square1-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-8-textarea').value;
+    localStorage.setItem('square1-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square1-9-textarea').value;
+    localStorage.setItem('square1-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square2-1-textarea').value;
+    localStorage.setItem('square2-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-2-textarea').value;
+    localStorage.setItem('square2-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-3-textarea').value;
+    localStorage.setItem('square2-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-4-textarea').value;
+    localStorage.setItem('square2-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-5-textarea').value;
+    localStorage.setItem('square2-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-6-textarea').value;
+    localStorage.setItem('square2-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-7-textarea').value;
+    localStorage.setItem('square2-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-8-textarea').value;
+    localStorage.setItem('square2-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square2-9-textarea').value;
+    localStorage.setItem('square2-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square3-1-textarea').value;
+    localStorage.setItem('square3-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-2-textarea').value;
+    localStorage.setItem('square3-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-3-textarea').value;
+    localStorage.setItem('square3-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-4-textarea').value;
+    localStorage.setItem('square3-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-5-textarea').value;
+    localStorage.setItem('square3-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-6-textarea').value;
+    localStorage.setItem('square3-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-7-textarea').value;
+    localStorage.setItem('square3-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-8-textarea').value;
+    localStorage.setItem('square3-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square3-9-textarea').value;
+    localStorage.setItem('square3-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square4-1-textarea').value;
+    localStorage.setItem('square4-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-2-textarea').value;
+    localStorage.setItem('square4-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-3-textarea').value;
+    localStorage.setItem('square4-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-4-textarea').value;
+    localStorage.setItem('square4-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-5-textarea').value;
+    localStorage.setItem('square4-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-6-textarea').value;
+    localStorage.setItem('square4-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-7-textarea').value;
+    localStorage.setItem('square4-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-8-textarea').value;
+    localStorage.setItem('square4-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square4-9-textarea').value;
+    localStorage.setItem('square4-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square5-1-textarea').value;
+    localStorage.setItem('square5-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-2-textarea').value;
+    localStorage.setItem('square5-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-3-textarea').value;
+    localStorage.setItem('square5-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-4-textarea').value;
+    localStorage.setItem('square5-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-5-textarea').value;
+    localStorage.setItem('square5-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-6-textarea').value;
+    localStorage.setItem('square5-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-7-textarea').value;
+    localStorage.setItem('square5-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-8-textarea').value;
+    localStorage.setItem('square5-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square5-9-textarea').value;
+    localStorage.setItem('square5-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square6-1-textarea').value;
+    localStorage.setItem('square6-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-2-textarea').value;
+    localStorage.setItem('square6-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-3-textarea').value;
+    localStorage.setItem('square6-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-4-textarea').value;
+    localStorage.setItem('square6-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-5-textarea').value;
+    localStorage.setItem('square6-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-6-textarea').value;
+    localStorage.setItem('square6-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-7-textarea').value;
+    localStorage.setItem('square6-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-8-textarea').value;
+    localStorage.setItem('square6-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square6-9-textarea').value;
+    localStorage.setItem('square6-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square7-1-textarea').value;
+    localStorage.setItem('square7-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-2-textarea').value;
+    localStorage.setItem('square7-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-3-textarea').value;
+    localStorage.setItem('square7-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-4-textarea').value;
+    localStorage.setItem('square7-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-5-textarea').value;
+    localStorage.setItem('square7-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-6-textarea').value;
+    localStorage.setItem('square7-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-7-textarea').value;
+    localStorage.setItem('square7-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-8-textarea').value;
+    localStorage.setItem('square7-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square7-9-textarea').value;
+    localStorage.setItem('square7-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square8-1-textarea').value;
+    localStorage.setItem('square8-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-2-textarea').value;
+    localStorage.setItem('square8-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-3-textarea').value;
+    localStorage.setItem('square8-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-4-textarea').value;
+    localStorage.setItem('square8-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-5-textarea').value;
+    localStorage.setItem('square8-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-6-textarea').value;
+    localStorage.setItem('square8-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-7-textarea').value;
+    localStorage.setItem('square8-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-8-textarea').value;
+    localStorage.setItem('square8-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square8-9-textarea').value;
+    localStorage.setItem('square8-9-textarea', textareavalue);
+
+    textareavalue = document.getElementById('square9-1-textarea').value;
+    localStorage.setItem('square9-1-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-2-textarea').value;
+    localStorage.setItem('square9-2-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-3-textarea').value;
+    localStorage.setItem('square9-3-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-4-textarea').value;
+    localStorage.setItem('square9-4-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-5-textarea').value;
+    localStorage.setItem('square9-5-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-6-textarea').value;
+    localStorage.setItem('square9-6-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-7-textarea').value;
+    localStorage.setItem('square9-7-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-8-textarea').value;
+    localStorage.setItem('square9-8-textarea', textareavalue);
+    textareavalue = document.getElementById('square9-9-textarea').value;
+    localStorage.setItem('square9-9-textarea', textareavalue);
+}
+/**
+* localstrageクリア処理
+ここでローカルストレージを空にする
+*/
+function deletelocalstrage() {
+    localStorage.removeItem('kicker');
+    document.getElementById('kicker').value = '';
+
+    localStorage.removeItem('square1-1-textarea');
+    document.getElementById('square1-1-textarea').value = '';
+    localStorage.removeItem('square1-2-textarea');
+    document.getElementById('square1-2-textarea').value = '';
+    localStorage.removeItem('square1-3-textarea');
+    document.getElementById('square1-3-textarea').value = '';
+    localStorage.removeItem('square1-4-textarea');
+    document.getElementById('square1-4-textarea').value = '';
+    localStorage.removeItem('square1-5-textarea');
+    document.getElementById('square1-5-textarea').value = '';
+    localStorage.removeItem('square1-6-textarea');
+    document.getElementById('square1-6-textarea').value = '';
+    localStorage.removeItem('square1-7-textarea');
+    document.getElementById('square1-7-textarea').value = '';
+    localStorage.removeItem('square1-8-textarea');
+    document.getElementById('square1-8-textarea').value = '';
+    localStorage.removeItem('square1-9-textarea');
+    document.getElementById('square1-9-textarea').value = '';
+
+    localStorage.removeItem('square2-1-textarea');
+    document.getElementById('square2-1-textarea').value = '';
+    localStorage.removeItem('square2-2-textarea');
+    document.getElementById('square2-2-textarea').value = '';
+    localStorage.removeItem('square2-3-textarea');
+    document.getElementById('square2-3-textarea').value = '';
+    localStorage.removeItem('square2-4-textarea');
+    document.getElementById('square2-4-textarea').value = '';
+    localStorage.removeItem('square2-5-textarea');
+    document.getElementById('square2-5-textarea').value = '';
+    localStorage.removeItem('square2-6-textarea');
+    document.getElementById('square2-6-textarea').value = '';
+    localStorage.removeItem('square2-7-textarea');
+    document.getElementById('square2-7-textarea').value = '';
+    localStorage.removeItem('square2-8-textarea');
+    document.getElementById('square2-8-textarea').value = '';
+    localStorage.removeItem('square2-9-textarea');
+    document.getElementById('square2-9-textarea').value = '';
+
+    localStorage.removeItem('square3-1-textarea');
+    document.getElementById('square3-1-textarea').value = '';
+    localStorage.removeItem('square3-2-textarea');
+    document.getElementById('square3-2-textarea').value = '';
+    localStorage.removeItem('square3-3-textarea');
+    document.getElementById('square3-3-textarea').value = '';
+    localStorage.removeItem('square3-4-textarea');
+    document.getElementById('square3-4-textarea').value = '';
+    localStorage.removeItem('square3-5-textarea');
+    document.getElementById('square3-5-textarea').value = '';
+    localStorage.removeItem('square3-6-textarea');
+    document.getElementById('square3-6-textarea').value = '';
+    localStorage.removeItem('square3-7-textarea');
+    document.getElementById('square3-7-textarea').value = '';
+    localStorage.removeItem('square3-8-textarea');
+    document.getElementById('square3-8-textarea').value = '';
+    localStorage.removeItem('square3-9-textarea');
+    document.getElementById('square3-9-textarea').value = '';
+
+    localStorage.removeItem('square4-1-textarea');
+    document.getElementById('square4-1-textarea').value = '';
+    localStorage.removeItem('square4-2-textarea');
+    document.getElementById('square4-2-textarea').value = '';
+    localStorage.removeItem('square4-3-textarea');
+    document.getElementById('square4-3-textarea').value = '';
+    localStorage.removeItem('square4-4-textarea');
+    document.getElementById('square4-4-textarea').value = '';
+    localStorage.removeItem('square4-5-textarea');
+    document.getElementById('square4-5-textarea').value = '';
+    localStorage.removeItem('square4-6-textarea');
+    document.getElementById('square4-6-textarea').value = '';
+    localStorage.removeItem('square4-7-textarea');
+    document.getElementById('square4-7-textarea').value = '';
+    localStorage.removeItem('square4-8-textarea');
+    document.getElementById('square4-8-textarea').value = '';
+    localStorage.removeItem('square4-9-textarea');
+    document.getElementById('square4-9-textarea').value = '';
+
+    localStorage.removeItem('square5-1-textarea');
+    document.getElementById('square5-1-textarea').value = '';
+    localStorage.removeItem('square5-2-textarea');
+    document.getElementById('square5-2-textarea').value = '';
+    localStorage.removeItem('square5-3-textarea');
+    document.getElementById('square5-3-textarea').value = '';
+    localStorage.removeItem('square5-4-textarea');
+    document.getElementById('square5-4-textarea').value = '';
+    localStorage.removeItem('square5-5-textarea');
+    document.getElementById('square5-5-textarea').value = '';
+    localStorage.removeItem('square5-6-textarea');
+    document.getElementById('square5-6-textarea').value = '';
+    localStorage.removeItem('square5-7-textarea');
+    document.getElementById('square5-7-textarea').value = '';
+    localStorage.removeItem('square5-8-textarea');
+    document.getElementById('square5-8-textarea').value = '';
+    localStorage.removeItem('square5-9-textarea');
+    document.getElementById('square5-9-textarea').value = '';
+
+    localStorage.removeItem('square6-1-textarea');
+    document.getElementById('square6-1-textarea').value = '';
+    localStorage.removeItem('square6-2-textarea');
+    document.getElementById('square6-2-textarea').value = '';
+    localStorage.removeItem('square6-3-textarea');
+    document.getElementById('square6-3-textarea').value = '';
+    localStorage.removeItem('square6-4-textarea');
+    document.getElementById('square6-4-textarea').value = '';
+    localStorage.removeItem('square6-5-textarea');
+    document.getElementById('square6-5-textarea').value = '';
+    localStorage.removeItem('square6-6-textarea');
+    document.getElementById('square6-6-textarea').value = '';
+    localStorage.removeItem('square6-7-textarea');
+    document.getElementById('square6-7-textarea').value = '';
+    localStorage.removeItem('square6-8-textarea');
+    document.getElementById('square6-8-textarea').value = '';
+    localStorage.removeItem('square6-9-textarea');
+    document.getElementById('square6-9-textarea').value = '';
+
+    localStorage.removeItem('square7-1-textarea');
+    document.getElementById('square7-1-textarea').value = '';
+    localStorage.removeItem('square7-2-textarea');
+    document.getElementById('square7-2-textarea').value = '';
+    localStorage.removeItem('square7-3-textarea');
+    document.getElementById('square7-3-textarea').value = '';
+    localStorage.removeItem('square7-4-textarea');
+    document.getElementById('square7-4-textarea').value = '';
+    localStorage.removeItem('square7-5-textarea');
+    document.getElementById('square7-5-textarea').value = '';
+    localStorage.removeItem('square7-6-textarea');
+    document.getElementById('square7-6-textarea').value = '';
+    localStorage.removeItem('square7-7-textarea');
+    document.getElementById('square7-7-textarea').value = '';
+    localStorage.removeItem('square7-8-textarea');
+    document.getElementById('square7-8-textarea').value = '';
+    localStorage.removeItem('square7-9-textarea');
+    document.getElementById('square7-9-textarea').value = '';
+
+    localStorage.removeItem('square8-1-textarea');
+    document.getElementById('square8-1-textarea').value = '';
+    localStorage.removeItem('square8-2-textarea');
+    document.getElementById('square8-2-textarea').value = '';
+    localStorage.removeItem('square8-3-textarea');
+    document.getElementById('square8-3-textarea').value = '';
+    localStorage.removeItem('square8-4-textarea');
+    document.getElementById('square8-4-textarea').value = '';
+    localStorage.removeItem('square8-5-textarea');
+    document.getElementById('square8-5-textarea').value = '';
+    localStorage.removeItem('square8-6-textarea');
+    document.getElementById('square8-6-textarea').value = '';
+    localStorage.removeItem('square8-7-textarea');
+    document.getElementById('square8-7-textarea').value = '';
+    localStorage.removeItem('square8-8-textarea');
+    document.getElementById('square8-8-textarea').value = '';
+    localStorage.removeItem('square8-9-textarea');
+    document.getElementById('square8-9-textarea').value = '';
+
+    localStorage.removeItem('square9-1-textarea');
+    document.getElementById('square9-1-textarea').value = '';
+    localStorage.removeItem('square9-2-textarea');
+    document.getElementById('square9-2-textarea').value = '';
+    localStorage.removeItem('square9-3-textarea');
+    document.getElementById('square9-3-textarea').value = '';
+    localStorage.removeItem('square9-4-textarea');
+    document.getElementById('square9-4-textarea').value = '';
+    localStorage.removeItem('square9-5-textarea');
+    document.getElementById('square9-5-textarea').value = '';
+    localStorage.removeItem('square9-6-textarea');
+    document.getElementById('square9-6-textarea').value = '';
+    localStorage.removeItem('square9-7-textarea');
+    document.getElementById('square9-7-textarea').value = '';
+    localStorage.removeItem('square9-8-textarea');
+    document.getElementById('square9-8-textarea').value = '';
+    localStorage.removeItem('square9-9-textarea');
+    document.getElementById('square9-9-textarea').value = '';
+}
+
+</script>
+<footer><small>G's</small></footer>
+</body>
+</html>
